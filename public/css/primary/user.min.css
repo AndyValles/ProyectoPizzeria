@@ -1,0 +1,246 @@
+body {
+    background: rgb(216, 216, 216);
+}
+
+.content-menu {
+    width: 100%;
+    display: flex;
+}
+
+.cnt-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(255, 255, 255);
+    box-shadow: 0px 10px 5px rgb(184, 183, 183);
+}
+
+.cnt-total {
+    width: 40%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cnt-menu {
+    padding: 20px;
+    background: rgb(255, 255, 255);
+    min-width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-menu {
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-menu {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(58, 158, 204);
+}
+
+.cnt-Admin {
+    margin: 10px 0;
+    min-width: 70%;
+    padding: 20px;
+    background: rgb(255, 255, 255);
+}
+
+.banner-title {
+    padding: 20px;
+    background: rgb(74, 182, 59);
+    color: rgb(255, 255, 255);
+}
+
+.row-btn-option {
+    width: 6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    background: rgb(255, 255, 255);
+}
+
+.btn-option-active {
+    background: rgb(74, 182, 59);
+    color: rgb(255, 255, 255);
+}
+
+.btn-option {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-option i {
+    font-size: 1.5em;
+}
+
+
+/*Agregar*/
+
+.cnt-user {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+}
+
+.cnt-user-add {
+    width: 90%;
+    background: rgb(255, 255, 255);
+}
+
+.row-user-add {
+    width: 100%;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.item-user-add {
+    width: 100%;
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*icon*/
+
+.user-icon {
+    padding: 0.5em;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(196, 194, 194);
+    font-size: 5em;
+}
+
+
+/*input*/
+
+.input-admin-add {
+    width: 100%;
+    height: 20px;
+    border-radius: 2px;
+    padding: 5px 10px;
+    background: rgb(230, 217, 217);
+}
+
+
+/*button*/
+
+.btn-salir {
+    width: 80px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    background: rgb(255, 255, 255);
+}
+
+.btn-salir:hover {
+    color: rgb(117, 117, 117);
+    background: rgb(230, 229, 229);
+}
+
+.bt-cerrar {
+    width: 90px;
+    height: 40px;
+    color: rgb(255, 255, 255);
+    background: rgb(224, 76, 76);
+    border-radius: 10px;
+}
+
+.bt-cerrar:hover {
+    background: rgb(173, 48, 48);
+}
+
+.bt-cerrar:active {
+    background: rgb(224, 66, 66);
+}
+
+.btn-admin {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(66, 199, 155);
+}
+
+.btn-admin:hover {
+    color: rgb(38, 155, 116);
+}
+
+.btn-admin-add {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background: rgb(64, 203, 207);
+}
+
+.btn-admin-add:hover {
+    background: rgb(46, 148, 151);
+}
+
+.btn-admin-add:active {
+    background: rgb(38, 225, 231);
+}
+
+
+/*Text*/
+
+.txt-title-add {
+    width: 50%;
+    font-size: 15px;
+    color: rgb(92, 92, 92);
+}
+
+.txt-sub-name {
+    font-size: 2em;
+}
+
+.sub-font {
+    color: rgb(168, 168, 168);
+}
+
+@media screen and (max-width:870px) {
+    .content-menu {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cnt-btn-option {
+        width: 90%;
+        display: flex;
+    }
+    .cnt-user {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cnt-total {
+        width: 80%;
+    }
+}

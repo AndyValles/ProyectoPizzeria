@@ -1,0 +1,301 @@
+.ctn-screen-expired {
+    z-index: 100;
+    position: absolute;
+    width: 100%;
+    height: 35em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn-close-menu {
+    display: none;
+    width: 30%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-close-menu {
+    background: transparent;
+    border-radius: 50px 0px 0 50px;
+    padding: 40px 30px;
+}
+
+.btn-close-menu:hover {
+    background: rgb(129, 129, 129);
+    color: rgb(255, 255, 255);
+}
+
+.btn-close-menu:active {
+    background: rgb(184, 184, 184);
+    color: rgb(255, 255, 255);
+}
+
+.btn-adminselect {
+    color: rgb(131, 113, 240) !important;
+    border-left: 5px solid rgb(131, 113, 240) !important;
+}
+
+.btn-hr-select {
+    color: rgb(131, 113, 240) !important;
+}
+
+.content-image-menu {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn-btn-hamburger {
+    width: 10%;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-hr-select::before {
+    position: absolute;
+    left: 4px;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: rgb(131, 113, 240);
+}
+
+.cctn-admin {
+    position: relative;
+    width: 20%;
+    overflow: hidden;
+}
+
+.adminmenu-a {
+    width: 100%;
+    height: 40px;
+    color: rgb(222, 222, 223);
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctn-content {
+    width: 80%;
+}
+
+.adminmenu-a i {
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+.adminmenu-a:hover {
+    color: rgb(95, 83, 165);
+    background: rgb(59, 59, 59);
+}
+
+.ctn-btn-admin {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.ctn-adminmenu {
+    position: fixed;
+    width: 20%;
+    height: 40rem;
+    background: rgb(46, 46, 46);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.ctn-adminmenu .adminmenu-row {
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+.ctn-adminmenu .adminmenu-cc {
+    width: 100%;
+    height: 10px;
+    background: rgb(131, 113, 240);
+}
+
+.ctn-adminmenu .adminmenu-img {
+    width: 50%;
+    margin: 10px 0;
+}
+
+.ctn-adminmenu .adminmenu-btn {
+    width: 100%;
+    height: 40px;
+    background: transparent;
+    color: rgb(222, 222, 223);
+    text-align: left;
+    padding: 0 70px;
+}
+
+.ctn-adminmenu .adminmenu-btn i {
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+.ctn-adminmenu .adminmenu-btn:hover {
+    color: rgb(95, 83, 165);
+    background: rgb(59, 59, 59);
+}
+
+.ctn-adminmenu .adminmenu-hr-btn {
+    width: 100%;
+    background: rgb(54, 54, 54);
+    height: 0px;
+    overflow: hidden;
+    overflow-y: scroll;
+    transition: 2s;
+    &::-webkit-scrollbar {
+        width: 0%;
+    }
+}
+
+.ctn-adminmenu .adminmenu-hr-btn a {
+    position: relative;
+    color: rgb(222, 222, 223);
+    width: 100%;
+    height: 40px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    padding: 0 50px;
+}
+
+.ctn-adminmenu .adminmenu-hr-btn a i {
+    margin: 0 10px;
+}
+
+.ctn-adminmenu .adminmenu-hr-btn a:hover {
+    color: rgb(95, 83, 165);
+    background: rgb(59, 59, 59);
+}
+
+.input-paginate {
+    width: 60px;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid rgb(129, 129, 129);
+    padding: 0 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.cnt-admintopmenu {
+    z-index: 100;
+    width: 100%;
+    min-height: 50px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 5px 5px 5px rgb(211, 213, 212);
+}
+
+.cnt-admintopmenu .icon-menu {
+    font-size: 30px;
+}
+
+.ctn-admintopmenu-input {
+    position: relative;
+    width: 50%;
+    display: flex;
+    background: rgb(240, 243, 242);
+    color: rgb(183, 182, 187);
+}
+
+.btn-search-menu .icon-search {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    pointer-events: none;
+}
+
+.btn-search-menu {
+    width: 100%;
+    padding: 20px 30px;
+    background: transparent;
+}
+
+.cnt-admintopmenu .row-image-user {
+    background: rgb(240, 243, 242);
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cnt-adminruta {
+    width: 100%;
+    display: flex;
+}
+
+.cnt-adminruta .row-ruta {
+    width: 80px;
+    height: 30px;
+    position: relative;
+    filter: drop-shadow(5px 5px 5px rgb(211, 213, 212));
+}
+
+.cnt-adminruta .row-ruta .admin-ruta {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100px;
+    height: 30px;
+    background: rgb(255, 255, 255);
+    box-shadow: 50px 50px 50px rgb(211, 213, 212);
+    -webkit-clip-path: polygon(0 0, 80% 0%, 100% 50%, 80% 100%, 0 100%);
+    clip-path: polygon(0 0, 80% 0%, 100% 50%, 80% 100%, 0 100%);
+}
+
+
+/*# sourceMappingURL=menu_admin.css.map */
+
+@media screen and (max-width:780px) {
+    .ctn-btn-hamburger {
+        display: flex;
+    }
+    .cctn-admin {
+        z-index: 1000;
+        position: fixed;
+        width: 50%;
+    }
+    .ctn-adminmenu {
+        top: 0;
+        left: -30em;
+        transition: 1s;
+        width: 50%;
+        height: 100vh;
+        background: rgb(46, 46, 46);
+    }
+    .ctn-content {
+        width: 100%;
+    }
+    .ctn-close-menu {
+        display: flex;
+    }
+    .content-image-menu {
+        justify-content: space-between;
+        padding: 0 10px;
+    }
+    .ctn-admintopmenu-input {
+        width: 80%;
+    }
+}

@@ -1,0 +1,123 @@
+body {
+    background: rgb(243, 243, 243);
+}
+
+.cnt-local {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.row-local {
+    padding: 20px;
+    width: 90%;
+    background: rgb(255, 255, 255);
+    display: flex;
+    gap: 10px;
+}
+
+.cnt-local-search {
+    width: 20%;
+    display: flex;
+}
+
+.info-local-search {
+    border: 2px solid rgb(230, 230, 230);
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cnt-local-card {
+    width: 100%;
+    margin: 10px 0;
+    min-height: 10em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn-item {
+    width: 20%;
+    margin: 0 20px;
+    border-right: 3px solid rgb(204, 218, 233);
+}
+
+
+/*card*/
+
+.local-card {
+    width: 80%;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    display: flex;
+}
+
+.row-local-card {
+    display: flex;
+    gap: 10px;
+}
+
+.cnt-mapa {
+    width: 30%;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+
+/*input*/
+
+.input-local-search {
+    width: 10em;
+    padding: 10px;
+    background: rgb(230, 230, 230);
+}
+
+
+/*Button*/
+
+.btn-search-local {
+    width: 4em;
+    padding: 10px;
+}
+
+.btn-search-local:hover {
+    background: rgb(160, 160, 160);
+}
+
+
+/*texto*/
+
+.txt-local-title {
+    font-size: 1.5em;
+}
+
+.txt-local-descrip {
+    font-size: 1.3em;
+    color: rgb(160, 160, 160);
+}
+
+.txt-local-subtitle {
+    color: rgb(194, 201, 216);
+}
+
+.txt-sublocal-title {
+    color: rgb(175, 176, 177);
+}
+
+@media screen and (max-width:780px) {
+    .txt-local-descrip {
+        font-size: 1em;
+    }
+    .ctn-item {
+        width: 40%;
+    }
+    .cnt-local-search {
+        width: 40%;
+    }
+}

@@ -1,0 +1,421 @@
+    @import url("../color.min.css");
+    .cnt-slider {
+        position: relative;
+        height: 30rem;
+    }
+
+    .row-slider {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        overflow: hidden;
+    }
+
+    .item-slide {
+        position: absolute;
+        width: 100%;
+        transition: 2s;
+        background: rgb(224 229 222);
+        height: 40rem;
+        overflow: hidden;
+    }
+
+    .item-slider-imagen {
+        width: 90em;
+        height: 40em;
+        object-fit: none;
+        transition: 1s;
+    }
+
+    .cnt-button {
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+        height: 90%;
+        object-fit: cover;
+    }
+
+    .cnt-btn {
+        position: relative;
+        width: 10em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    /*
+.cnt-paginate {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    bottom: 0;
+}*/
+
+    .ctn-text-progress {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.4em;
+        font-weight: bold;
+        color: rgb(255 255 255);
+    }
+
+    .cnt-product {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(4, 20%);
+        gap: 20px;
+        padding: 30px;
+    }
+
+    .cnt--product {
+        width: 100%;
+        display: grid;
+        justify-content: center;
+        gap: 20px;
+        grid-template-columns: repeat(4, 20%);
+    }
+
+    .cnt-product-title {
+        width: 80%;
+        height: 1em;
+        color: rgb(255, 255, 255);
+        padding: 20px;
+        margin: 20px;
+        position: relative;
+    }
+
+    .item-item-imagen {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        z-index: -1;
+        transition: 1s;
+    }
+
+    .ctn-progress-bar {
+        position: relative;
+        width: 50%;
+        height: 0.2em;
+        display: flex;
+        align-items: flex-end;
+        background: rgba(238, 236, 236, 0.719);
+        margin: 10px 0;
+    }
+
+    .progress-bar {
+        position: absolute;
+        width: 0%;
+        height: 0.5em;
+        background: rgb(255, 255, 255);
+    }
+    /*Cards*/
+
+    .card-product {
+        width: 100%;
+        height: 25em;
+        transition: 0.2s;
+        border-radius: 25px;
+        overflow: hidden;
+        background: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+    }
+
+    .card-product:hover {
+        box-shadow: 5px 5px 5px var(--shadow-card);
+        transform: scale(110%);
+        /*color: rgb(255 255 255);
+    /*border: 2px solid rgb(2, 127, 93);
+    /*background: rgb(2, 127, 93);
+    /*border: 2px solid rgb(236 89 46);
+    background: rgb(236 89 46);*/
+    }
+
+    .cnt-card-image {
+        background: rgb(218 217 217);
+        height: 12rem;
+    }
+
+    .content-descrip-product {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .content-descrip-product select {
+        background: transparent;
+        color: rgb(145, 145, 145);
+        width: 50%;
+    }
+
+    .cnt-card-info {
+        height: 10em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 20px;
+        /*background: rgb(255 255 255);*/
+    }
+    /*Banner*/
+
+    .cnt-banner-1 {
+        position: relative;
+        width: 100%;
+        min-height: 20rem;
+    }
+
+    .cnt-banner-image {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .cnt-baner-info {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        padding: 20px;
+        background: rgb(209 44 43);
+        color: rgb(255 255 255);
+        clip-path: polygon(0 0, 100% 0, 0% 100%);
+    }
+
+    .cnt-banner-des {
+        width: 100%;
+        min-height: 20rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /*image*/
+
+    .image-cover {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .image-zoom:hover {
+        transform: scale(120%);
+    }
+    /*Banner 2*/
+
+    .cnt-banner-2 {
+        width: 100%;
+        margin: 50px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row-banner-1 {
+        margin: 20px;
+        width: 25vw;
+        height: 25vw;
+        background: rgb(141 140 139);
+    }
+
+    .row-banner-2 {
+        margin: 10px;
+        width: 15vw;
+        height: 15vw;
+        background: rgb(141 140 139);
+    }
+
+    .row-banner-3 {
+        margin: 10px;
+        height: 10vw;
+        background: rgb(141 140 139);
+    }
+    /*Banner footer*/
+
+    .ctn-banner-footer {
+        width: 100%;
+        margin: 50px 0;
+        background: rgb(218 217 217);
+        width: 60%;
+        height: 10rem;
+    }
+    /*botones*/
+
+    .btn-next,
+    .btn-prev {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(255 255 255);
+        border-radius: 50px;
+    }
+
+    .btn-next:hover,
+    .btn-prev:hover {
+        transform: scale(150%);
+        box-shadow: 1px 1px 10px rgb(145, 145, 145);
+    }
+
+    .btn-paginate-slider {
+        width: 20px;
+        height: 20px;
+        background: rgb(255, 255, 255);
+        border-radius: 50px;
+    }
+
+    .btn-paginate-slider-select {
+        width: 50px;
+        height: 20px;
+        background: rgb(255, 255, 255);
+        border-radius: 50px;
+    }
+
+    .btn-minus,
+    .btn-plus {
+        color: rgb(255 255 255);
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+
+    .btn-minus {
+        background: rgb(236 37 46);
+    }
+
+    .btn-plus {
+        background: rgb(17 170 46);
+    }
+
+    .btn-card-agregar {
+        background: rgb(209 44 43);
+        color: rgb(255 255 255);
+        width: 100%;
+        height: 30px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .btn-card-agregar:hover {
+        background: rgb(156, 31, 31);
+    }
+
+    .btn-card-agregar:active {
+        background: rgb(151, 32, 32);
+    }
+
+    .btn-banner-agregar {
+        background: rgb(209 44 43);
+        color: rgb(255 255 255);
+        border-radius: 10px;
+        padding: 10px 50px;
+        font-size: 20px;
+    }
+
+    .btn-banner-agregar:hover {
+        background: rgb(190, 48, 48);
+    }
+
+    .btn-banner-agregar:active {
+        background: rgb(160, 40, 40);
+    }
+    /*Texto*/
+
+    .txt-txt-actual {
+        font-size: 1.8em;
+        color: rgb(187, 187, 187);
+    }
+    /*card*/
+
+    .title-product-tipoVal {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-size: 2em;
+        text-shadow: 3px 2px 0px rgb(0 0 0);
+    }
+
+    .txt-card-name {
+        color: rgb(90 97 100);
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .txt-card-des {
+        color: rgb(90 97 100);
+        font-size: 13px;
+    }
+
+    .txt-card-price {
+        width: 100%;
+        text-align: center;
+        color: rgb(148, 148, 148);
+        font-size: 2em;
+    }
+
+    .txt-card-cant {
+        padding: 0 5px;
+        font-size: 20px;
+    }
+
+    .txt-banner-1 {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        text-shadow: 3px 2px 8px rgb(61, 52, 52);
+    }
+
+    .txt-banner-2 {
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+        text-shadow: 3px 0px 8px rgb(61, 52, 52);
+    }
+
+    .txt-price-1 {
+        color: rgb(255, 255, 255);
+        font-size: 20px;
+        text-shadow: 3px 2px 8px rgb(0 0 0);
+    }
+
+    .txt-price-2 {
+        color: rgb(255, 255, 255);
+        font-size: 80px;
+        text-shadow: 3px 2px 0px rgb(0 0 0);
+    }
+
+    .txt-titulo {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 30px;
+    }
+
+    .txt-title-Agregado {
+        font-size: 1.5em;
+        color: var(--color-primary);
+    }
+    /*other*/
+
+    .item-slide-animate-0 {
+        width: 0%!important;
+    }
+
+    @media screen and (max-width:786px) {
+        .cnt-product {
+            grid-template-columns: repeat(2, 45%);
+        }
+        .cnt--product {
+            grid-template-columns: repeat(2, 40%);
+        }
+    }

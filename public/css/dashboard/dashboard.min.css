@@ -1,0 +1,211 @@
+.ctn-dashboard {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(245, 245, 252);
+}
+
+.ctn-title-dashboard {
+    width: 90%;
+    padding: 20px;
+}
+
+.ctn-present-dashboard {
+    width: 80%;
+    height: 9em;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+}
+
+.present-dashboard {
+    width: 100%;
+    padding: 20px;
+}
+
+.ctn-img-present-dashboard {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.img-present-dasboard {
+    object-fit: cover;
+    width: 10em;
+    height: 15em;
+}
+
+.ctn-info-dashboard {
+    width: 90%;
+    margin: 20px 0;
+}
+
+.cnt-cards {
+    width: 100%;
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+}
+
+.cnt-card-dashboard {
+    width: 10em;
+    border-radius: 5px;
+    background: rgb(253, 253, 253);
+}
+
+.ctn-tables-dashboard {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.ctn-table {
+    width: 100%;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgb(255, 255, 255);
+}
+
+
+/*table*/
+
+.table-dashboard {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+}
+
+.tb-body,
+.tb-head {
+    text-align: center;
+    height: 2em;
+}
+
+.tb-head {
+    color: rgb(186, 185, 190);
+    border: 1px solid rgb(239, 238, 243);
+    background: rgb(239, 238, 243);
+}
+
+.row-body {
+    color: rgb(66, 66, 66);
+    border-bottom: 2px solid rgb(239, 238, 243);
+}
+
+.table-user {
+    background: rgb(245, 244, 244);
+    margin: 10px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.row-user {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/*Background*/
+
+.bg-day-present {
+    background: rgb(230, 230, 230);
+}
+
+.bg-nigth-present {
+    background: rgb(92, 205, 240);
+}
+
+
+/*button*/
+
+.btn-circle {
+    width: 10px;
+    height: 10px;
+    background: rgb(0, 162, 255);
+    border-radius: 50px;
+}
+
+.btn-card-title {
+    width: 100%;
+    height: 3em;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.btn-card-title:hover {
+    background: rgb(238, 238, 238);
+}
+
+
+/*text*/
+
+.txt-title-dashboard {
+    font-size: 2em;
+}
+
+.txt-title-present {
+    height: 2em;
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+.txt-card-title {
+    width: 100%;
+    font-size: 0.8em;
+}
+
+.txt-card-plus {
+    height: 2em;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    color: rgb(106, 108, 241);
+}
+
+.txt-table-title {
+    font-size: 1.3em;
+}
+
+.txt-user-pri {
+    font-size: 1em;
+}
+
+.txt-user-sec {
+    color: rgb(200 200 200);
+    font-size: 0.8em;
+}
+
+@media screen and (max-width:780px) {
+    .cnt-cards {
+        gap: 10px;
+        grid-template-columns: repeat(2, 50%);
+        justify-content: center;
+        align-items: center;
+    }
+    .ctn-tables-dashboard {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        overflow: hidden;
+    }
+    .ctn-tables-dashboard {
+        justify-content: center;
+        align-items: center;
+    }
+    .ctn-table {
+        width: 90%;
+    }
+}

@@ -1,0 +1,171 @@
+/*input*/
+
+.ctn-input-drop {
+    width: 85%;
+    height: 2.5em;
+    display: flex;
+    border-radius: 5px;
+    background: rgb(246, 247, 249);
+}
+
+.input-drop-cc {
+    width: 10%;
+    font-size: 1.2em;
+    color: rgb(150, 149, 149);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn-list {
+    display: none;
+    position: absolute;
+    border-radius: 0 0 5px 5px;
+    background: rgb(255, 255, 255);
+    box-shadow: 2px 2px 5px rgb(228, 228, 228);
+    width: 50%;
+    max-height: 9em;
+    overflow-y: scroll;
+}
+
+.ctn-list::-webkit-scrollbar {
+    width: 10px;
+    height: 100px;
+    background: rgb(255, 255, 255);
+}
+
+.ctn-list::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px rgb(204, 204, 204);
+}
+
+.item-list {
+    height: 2.1em;
+}
+
+.item-list:hover {
+    background: rgb(242, 246, 251);
+}
+
+.ctn-btn-list {
+    background: transparent;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+/*drop*/
+
+.ctn-drop-select {
+    width: 85%;
+    position: relative;
+}
+
+.input-drop-select {
+    width: 100%;
+    height: 2.5em;
+    display: flex;
+    border-radius: 5px;
+    background: rgb(246, 247, 249);
+    overflow: hidden;
+}
+
+.btn-input-select {
+    width: 100%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+
+.btn-input-select:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.ctn-drop {
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    height: 7em;
+    overflow-y: scroll;
+    background: rgb(255, 255, 255);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 2px 2px 5px rgb(231, 231, 231);
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+}
+
+.btn-select {
+    width: 100%;
+    display: flex;
+    padding: 10px 10px;
+    background: rgb(255, 255, 255);
+}
+
+.btn-select:hover {
+    background: rgb(231, 231, 231);
+}
+
+
+/*image*/
+
+.ctn-img-agregar {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-agregar {
+    min-width: 100%;
+    object-fit: scale-down;
+    height: 100%;
+}
+
+.ctn-input-file {
+    width: 100%;
+    display: flex;
+}
+
+.input-agregar-imagen {
+    height: 3em;
+    opacity: 0;
+    position: absolute;
+    z-index: 100;
+}
+
+.ii-img-agregar {
+    width: 20em;
+    height: 20em;
+    background: rgb(189, 190, 190);
+}
+
+.input-text-image {
+    width: 20em;
+    border-radius: 5px 0 0 5px;
+    background: rgb(242, 246, 251);
+}
+
+.input-upload {
+    width: 2em;
+    height: 2em;
+    border-radius: 0 5px 5px 0;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    background: rgb(111, 51, 207);
+}
+
+.input-upload .icon-upload {
+    z-index: 100;
+}

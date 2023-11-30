@@ -1,0 +1,44 @@
+:root[data-teme="ligth"] {
+    /*body color*/
+    --body-primary: rgb(245, 245, 245);
+    /*items color*/
+    --menu-primary: rgb(255, 255, 255);
+    --item-menu: rgb(70, 70, 70);
+    --txt-info: rgb(68, 128, 28);
+    --shadow-card: rgb(206, 206, 206);
+    /*color*/
+    --color-carrito: rgb(82, 81, 81);
+    --color-primary: rgb(0, 0, 0);
+}
+
+:root[data-teme="dark"] {
+    /*body color*/
+    --body-primary: rgb(32, 33, 36);
+    /*items color*/
+    --menu-primary: rgb(25, 31, 42);
+    --item-menu: rgb(240, 240, 240);
+    --txt-info: rgb(255, 255, 255);
+    --shadow-card: rgb(80, 76, 76);
+    /*items color*/
+    --color-carrito: rgb(224, 224, 224);
+    --color-primary: rgb(225, 225, 225);
+}
+
+
+/*intercambiables*/
+
+.gray-82_gray-224 {
+    color: var(--color-carrito);
+}
+
+
+/*no-intercambiables*/
+
+:root {
+    --color-white-255: rgb(255 255 255);
+}
+
+
+/*background*/
+
+@media (prefers-color-scheme: dark) {}

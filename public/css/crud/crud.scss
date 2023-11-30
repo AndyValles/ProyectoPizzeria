@@ -1,0 +1,390 @@
+@import "../_Variable.scss";
+
+.btn-paginate-select{
+    border-color:  $color-blue-67!important;
+    background: $color-blue-67!important;
+    color: $color-gray-245;
+}
+
+.btn-select-tabs{
+    color: $color-blue-72!important;
+    border-bottom:3px solid $color-green-70 !important;
+}
+
+.status-active{
+    margin: 0 10px;
+    color: $color-green-70;
+}
+
+.cnt-crud{
+    width: 100%;
+    .row-crud{
+        margin: 20px 50px;
+    }
+
+    .crud-title{
+        width: 100%;
+        font-size: 50px;
+        color: $color-gray-52;
+    }
+
+    .cnt-crud-Agregar{
+        width: 100%;
+        display: flex;
+        justify-content: end;
+        margin: 20px 0;
+
+
+    }
+
+    .cnt-crud-tabs{
+        width: 100%;
+        display: flex;
+        gap: 20px;
+        color: $color-gray-201;
+        .btn-crud-tabs{
+            width: 100%;
+            height: 30px;
+            background: transparent;
+            color: $color-gray-201;
+            font-size: 15px;
+        }
+    }
+
+
+    .row-crud-filter{
+        width: 100%;
+        color: $color-gray-121;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .input-search-filter{
+            width: 100%;
+            background: $color-gray-222;
+            padding: 10px ;
+            border-radius: 5px;
+        }
+
+
+    }
+}
+
+/*-Button -*/
+
+.btn-crud-Agregar{
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+    background:$color-blue-67;
+    color: $color-white;
+    &:hover{
+        background: $color-blue-95;
+    }
+}
+
+.btn-crud-filter{
+    width: 100%;
+    height: 50px;
+    background: $color-white;
+    box-shadow: 3px 3px 5px $color-gray-240;
+    border-radius: 5px;
+    color: $color-gray-166;
+}
+
+.row-crud-table{
+    width: 100%;
+    min-height: 21em;
+    background: $color-gray-245;
+    padding: 10px 0px;
+    .table-crud{
+        margin: 30px;
+        .table-header{
+            width: 100%;
+            display: flex;
+            text-align: center;
+            padding: 10px 0px;
+
+            color: $color-gray-166;
+            background: $color-gray-218;
+        }
+        .table-body{
+            background: $color-white;
+            margin: 5px 0;
+            border-radius: 5px;
+            &:hover{
+                box-shadow:5px 5px 5px $color-gray-218;
+                }
+        }
+
+        .table-row{
+            display: flex;
+            &:hover{
+            background: $color-blue-233;
+            }
+        }
+
+        .table-cell{
+            position: relative;
+            @include display-flex();
+            width: 100%;
+            .icon-bottom{
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+.ctn-dropview-filter{
+    z-index: 100;
+    position: absolute;
+    overflow: hidden;
+    display: none;//flex
+    flex-direction: column;
+    justify-content: center;
+    width: 15vw;
+    height: 190px ;
+    background: $color-white;
+    border-radius: 10px;
+    top: 60px;
+    left: -5em;
+    box-shadow: 5px 20px 15px $color-gray-211 ;
+    .cnt-dropview-item{
+            width: 100%;
+            height: 100px;
+            margin: 10px 0;
+            overflow-y:scroll;
+
+            .dropview-item{
+                .input-custom{
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
+                }
+
+            }
+        &::-webkit-scrollbar{
+            width: 10px;
+            background: $color-white;
+        }
+
+        &::-webkit-scrollbar-thumb{
+            border-radius:5px;
+            background: rgb(231, 231, 231);
+        }
+    }
+    .dropview-item{
+        position: relative;
+        width: 100%;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        .input-dropview-item{
+            margin:0 10px;
+            height: 30px;
+            border:1px solid rgb(221, 221, 221);
+            border-radius: 5px;
+            padding: 0 0 0 10px;
+            &:focus{
+                border:2px solid $color-blue-131;
+            }
+        }
+        &:hover{
+            background: $color-blue-233;
+        }
+    }
+}
+
+.icon-rd{
+    margin: 0 10px;
+  }
+
+.cnt-btn-option{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    .btn-option{
+        background: transparent;
+        width: 100%;
+        height: 40px;
+        font-size: 15px;
+        &:hover{
+            color: $color-blue-147;
+        }
+    }
+}
+
+.table-row-edit{
+    width: 100%;
+    overflow: hidden;
+    height: 0px;//90px
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4,25%);
+    .input-edit{
+        background: $color-gray-238;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .btn-crud-cancelar,
+    .btn-crud-edit{
+        margin:0 10px;
+        padding: 10px 30px;
+        border-radius: 10px;
+        color: $color-white;
+    }
+
+    .btn-crud-cancelar{
+        background: $color-red-231;
+        &:hover{
+            background: $color-red-199;
+        }
+    }
+    .btn-crud-edit{
+        background: $color-green-78;
+        &:hover{
+            background: $color-green-69;
+        }
+    }
+}
+
+
+.table-cell-filter{
+    z-index: 100;
+    width: 300px;
+    height: 80px;
+    top: 0;
+    display: none;//flex
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 10px;
+    background: $color-white;
+    box-shadow: 5px 5px 5px $color-gray-211;
+    border-radius: 5px;
+    .row-table-filter{
+        width: 170px;
+    }
+    .dropview-filter-table{
+        position: absolute;
+    }
+    .btn-filter-table{
+        width: 100%;
+        box-shadow: 5px 5px 5px $color-gray-211;
+        background: $color-white;
+        border-radius: 5px;
+        margin: 10px;
+        padding:10px 10px;
+    }
+
+    .input-table-filter{
+        width: 90%;
+        margin:0 20px;
+        padding: 10px 10px;
+        background: rgb(228,236,227);
+        border-radius: 20px;
+    }
+
+    .dropview-filter-table{
+        width: 50%;
+        height: 5em;
+        overflow-y:scroll;
+        border-radius: 10px;
+        padding: 10px;
+        background: $color-white;
+        box-shadow: 5px 5px 5px $color-gray-211;
+        .icon-radio{
+            margin:0 10px;
+        }
+        &::-webkit-scrollbar{
+            width: 10px;
+            background: $color-white;
+        }
+        &::-webkit-scrollbar-thumb{
+            border-radius:5px;
+            background: rgb(231, 231, 231);
+        }
+
+        .dropview-filter-item{
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 30px;
+            &:hover{
+                color: $color-blue-147;
+                .icon-radio{
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50px;
+                    background: $color-blue;
+                }
+            }
+            .radio-table-filter{
+                opacity: 0;
+                position: absolute;
+                width: 100%;
+                height: 30px;
+            }
+        }
+    }
+}
+
+.ctn-paginate{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    .row-paginate{
+        width: 50%;
+        display: flex;
+
+        .btn-paginate{
+            background: $color-white;
+            padding: 5px 10px;
+            border: 2px solid rgb(221, 221, 221);
+            border-radius: 5px;
+            margin:0 2px;
+            &:hover{
+                background: $color-blue-147;
+                border-color: $color-blue-147;
+            }
+        }
+    }
+}
+.cnt-buscar-filter{
+    width: 90%;
+    border: 2px solid rgb(95, 83, 165);
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 20px 0;
+}
+
+.cnt-crud-filter-input{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    gap:30px;
+    padding: 15px 10px;
+}
+
+.header-search-filter{
+    width: 100%;
+    height: 40px;
+    background: rgb(95, 83, 165);
+    color: white;
+    @include display-flex();
+}
+
+
+@media screen and (max-width: 768px){
+    .cnt-crud-filter-input{
+        grid-template-columns: repeat(1,100%);
+    }
+}

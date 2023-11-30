@@ -1,0 +1,47 @@
+.content-Menu {
+    padding: 20px 50px;
+    display: flex;
+    align-items: center;
+    background: rgb(50, 50, 50);
+    min-height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.icon-image-menu {
+    width: 70%;
+}
+
+.menu-item {
+    width: 10%;
+    text-align: center;
+    position: relative;
+}
+
+.select-item-menu {
+    color: rgb(218, 217, 217)!important;
+}
+
+.select-item-menu::after {
+    content: "";
+    top: 5px;
+    left: 0px;
+    position: absolute;
+    display: block;
+    border-radius: 50px;
+    width: 10px;
+    height: 10px;
+    background: rgb(218, 217, 217);
+}
+
+.text-menu {
+    color: rgb(109 111 111);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.text-menu:hover {
+    color: rgb(218, 217, 217);
+}

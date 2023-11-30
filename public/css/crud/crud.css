@@ -1,0 +1,476 @@
+.btn-paginate-select {
+    border-color: rgb(67, 149, 219) !important;
+    background: rgb(67, 149, 219) !important;
+    color: rgb(245, 246, 250);
+}
+
+.btn-select-tabs {
+    color: rgb(72, 70, 99) !important;
+    border-bottom: 3px solid rgb(70, 186, 82) !important;
+}
+
+.status-active {
+    margin: 0 10px;
+    color: rgb(70, 186, 82);
+}
+
+.cnt-crud {
+    width: 100%;
+}
+
+.cnt-crud .row-crud {
+    margin: 20px 50px;
+}
+
+.cnt-crud .crud-title {
+    width: 100%;
+    font-size: 50px;
+    color: rgb(52, 54, 51);
+}
+
+.cnt-crud .cnt-crud-Agregar {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    margin: 20px 0;
+}
+
+.cnt-crud .cnt-crud-tabs {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    color: rgb(201, 214, 200);
+}
+
+.cnt-crud .cnt-crud-tabs .btn-crud-tabs {
+    width: 100%;
+    height: 30px;
+    background: transparent;
+    color: rgb(201, 214, 200);
+    font-size: 15px;
+}
+
+.cnt-crud .row-crud-filter {
+    width: 100%;
+    color: rgb(121, 123, 119);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-search-filter {
+    width: 100%;
+    background: rgb(222, 222, 223);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+/*-Button -*/
+
+.btn-crud-Agregar {
+    width: 130px;
+    height: 30px;
+    border-radius: 5px;
+    background: rgb(67, 149, 219);
+    color: rgb(255, 255, 255);
+}
+
+.btn-crud-Agregar:hover {
+    background: rgb(95, 83, 165);
+}
+
+.btn-crud-filter {
+    width: 100%;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    box-shadow: 3px 3px 5px rgb(240, 243, 242);
+    border-radius: 5px;
+    color: rgb(166, 172, 165);
+}
+
+.row-crud-table {
+    width: 100%;
+    min-height: 21em;
+    background: rgb(245, 246, 250);
+    padding: 10px 0px;
+    overflow: hidden;
+}
+
+.row-crud-table .table-crud {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.row-crud-table .table-crud .table-header {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    padding: 10px 0px;
+    color: rgb(166, 172, 165);
+    background: rgb(218, 218, 222);
+}
+
+.row-crud-table .table-crud .table-body {
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 40px;
+    margin: 5px 0;
+    border-radius: 5px;
+}
+
+.row-crud-table .table-crud .table-body:hover {
+    box-shadow: 5px 5px 5px rgb(218, 218, 222);
+}
+
+.row-crud-table .table-crud .table-row {
+    height: 100%;
+    display: flex;
+}
+
+.row-crud-table .table-crud .table-row:hover {
+    background: rgb(233, 239, 254);
+}
+
+.row-crud-table .table-crud .table-cell {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.row-crud-table .table-crud .table-cell .icon-bottom {
+    font-size: 10px;
+}
+
+.ctn-dropview-filter {
+    z-index: 100;
+    position: absolute;
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 15vw;
+    height: 190px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    top: 60px;
+    left: -5em;
+    box-shadow: 5px 20px 15px rgb(211, 213, 212);
+}
+
+.ctn-dropview-filter .cnt-dropview-item {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    overflow-y: scroll;
+}
+
+.ctn-dropview-filter .cnt-dropview-item .dropview-item .input-custom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.ctn-dropview-filter .cnt-dropview-item::-webkit-scrollbar {
+    width: 10px;
+    background: rgb(255, 255, 255);
+}
+
+.ctn-dropview-filter .cnt-dropview-item::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgb(231, 231, 231);
+}
+
+.ctn-dropview-filter .dropview-item {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.ctn-dropview-filter .dropview-item .input-dropview-item {
+    margin: 0 10px;
+    height: 30px;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    padding: 0 0 0 10px;
+}
+
+.ctn-dropview-filter .dropview-item .input-dropview-item:focus {
+    border: 2px solid rgb(131, 113, 240);
+}
+
+.ctn-dropview-filter .dropview-item:hover {
+    background: rgb(233, 239, 254);
+}
+
+.icon-rd {
+    margin: 0 10px;
+}
+
+.cnt-btn-option {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cnt-btn-option .btn-option {
+    background: transparent;
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+}
+
+.cnt-btn-option .btn-option:hover {
+    color: rgb(147, 152, 246);
+}
+
+.table-row-edit {
+    width: 100%;
+    overflow: hidden;
+    height: 0px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4, 25%);
+}
+
+.table-row-edit .input-edit {
+    background: rgb(238, 247, 244);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.btn-crud-cancelar,
+.btn-crud-edit {
+    margin: 0 10px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.btn-crud-cancelar {
+    background: rgb(231, 80, 80);
+}
+
+.btn-crud-cancelar:hover {
+    background: rgb(199, 75, 75);
+}
+
+.btn-crud-edit {
+    background: rgb(78, 189, 68);
+}
+
+.btn-crud-edit:hover {
+    background: rgb(69, 167, 60);
+}
+
+.table-cell-filter {
+    z-index: 100;
+    width: 300px;
+    height: 80px;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin: 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px rgb(211, 213, 212);
+    border-radius: 5px;
+}
+
+.table-cell-filter .row-table-filter {
+    width: 170px;
+}
+
+.table-cell-filter .dropview-filter-table {
+    position: absolute;
+}
+
+.table-cell-filter .btn-filter-table {
+    width: 100%;
+    box-shadow: 5px 5px 5px rgb(211, 213, 212);
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px 10px;
+}
+
+.table-cell-filter .input-table-filter {
+    width: 90%;
+    margin: 0 20px;
+    padding: 10px 10px;
+    background: rgb(228, 236, 227);
+    border-radius: 20px;
+}
+
+.table-cell-filter .dropview-filter-table {
+    width: 50%;
+    height: 5em;
+    overflow-y: scroll;
+    border-radius: 10px;
+    padding: 10px;
+    background: rgb(255, 255, 255);
+    box-shadow: 5px 5px 5px rgb(211, 213, 212);
+}
+
+.table-cell-filter .dropview-filter-table .icon-radio {
+    margin: 0 10px;
+}
+
+.table-cell-filter .dropview-filter-table::-webkit-scrollbar {
+    width: 10px;
+    background: rgb(255, 255, 255);
+}
+
+.table-cell-filter .dropview-filter-table::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgb(231, 231, 231);
+}
+
+.table-cell-filter .dropview-filter-table .dropview-filter-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+}
+
+.table-cell-filter .dropview-filter-table .dropview-filter-item:hover {
+    color: rgb(147, 152, 246);
+}
+
+.table-cell-filter .dropview-filter-table .dropview-filter-item:hover .icon-radio {
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background: rgb(0, 0, 255);
+}
+
+.table-cell-filter .dropview-filter-table .dropview-filter-item .radio-table-filter {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 30px;
+}
+
+.ctn-paginate {
+    width: 100%;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.ctn-paginate .row-paginate {
+    width: 50%;
+    display: flex;
+}
+
+.ctn-paginate .row-paginate .btn-paginate {
+    background: rgb(255, 255, 255);
+    padding: 5px 10px;
+    border: 2px solid rgb(221, 221, 221);
+    border-radius: 5px;
+    margin: 0 2px;
+}
+
+.ctn-paginate .row-paginate .btn-paginate:hover {
+    background: rgb(147, 152, 246);
+    border-color: rgb(147, 152, 246);
+}
+
+.cnt-buscar-filter {
+    width: 90%;
+    border: 2px solid rgb(95, 83, 165);
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    margin: 20px 0;
+}
+
+.cnt-crud-filter-input {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 22%);
+    gap: 30px;
+    padding: 15px 10px;
+}
+
+.header-search-filter {
+    width: 100%;
+    height: 40px;
+    background: rgb(95, 83, 165);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/**/
+
+#ctn-item {
+    width: 100%;
+    display: flex;
+    margin: 20px 0;
+}
+
+.ctn-rbk-button {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.ctn-time-input {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/**/
+
+.input-time {
+    border: 1px solid rgb(246, 247, 249);
+    background: rgb(246, 247, 249);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+/**/
+
+.btn-tab-item {
+    width: 8em;
+    height: 3em;
+    background: transparent;
+}
+
+.btn-selected-item {
+    border-bottom: 2px solid rgb(199, 75, 75)!important;
+}
+
+@media screen and (max-width: 768px) {
+    .cnt-crud-filter-input {
+        grid-template-columns: repeat(1, 100%);
+    }
+    .ctn-time-input {
+        width: 90%;
+    }
+}
+
+
+/*# sourceMappingURL=crud.css.map */

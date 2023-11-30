@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+.login-image {
+    z-index: 10;
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+    position: absolute;
+    right: 0;
+    background: rgb(187, 195, 183);
+}
+
+.content-login {
+    width: 100%;
+    min-height: 40em;
+    position: relative;
+}
+
+.icon-info-p {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    pointer-events: none;
+}
+
+.ctn-info-content {
+    width: 100%;
+    display: flex;
+    height: 4em;
+}
+
+.cnt-register,
+.cnt-login {
+    background: rgb(255, 255, 255);
+    width: 50%;
+    min-height: 40em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-login {
+    width: 10%;
+    margin-right: 10px;
+}
+
+.cnt-row-login {
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn-ejes {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*input*/
+
+.input-login {
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 15px;
+    border-radius: 6px;
+    border: 1px solid rgb(217, 217, 217);
+    /*background: rgb(217, 217, 217);*/
+}
+
+.input-login::placeholder {
+    font-family: Nunito Sans;
+    font-weight: bold;
+    color: rgb(156, 155, 155);
+    /*background: rgb(231, 231, 231);*/
+}
+
+
+/*Button*/
+
+.btn-entrar,
+.btn-registrarse {
+    font-size: 1em;
+    color: rgb(223 49 57);
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-entrar:hover,
+.btn-registrarse:hover {
+    color: rgb(167, 48, 54);
+}
+
+.btn-entrar:active,
+.btn-registrarse:active {
+    color: rgb(207, 47, 55);
+}
+
+.btn-login-gmail {
+    min-width: 50%;
+    background: rgb(65 133 194);
+    color: rgb(255 255 255);
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.btn-login-gmail:hover {
+    background: rgb(44, 115, 177);
+}
+
+.btn-login-gmail:active {
+    background: rgb(19, 125, 218);
+}
+
+.btn-login-registrar,
+.btn-login-enviar {
+    width: 80%;
+    background: rgb(208 7 1);
+    color: rgb(255 255 255);
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.btn-login-registrar:hover,
+.btn-login-enviar:hover {
+    background: rgb(143, 7, 2);
+}
+
+.btn-login-registrar:active,
+.btn-login-enviar:active {
+    background: rgb(199, 11, 5);
+}
+
+.btn-eye-contra {
+    font-size: 1.5em;
+    color: rgb(180, 178, 178);
+    background: transparent;
+}
+
+.btn-eye-contra:hover {
+    color: rgb(116, 115, 115);
+}
+
+.btn-eye-contra:active {
+    color: rgb(77, 76, 76);
+}
+
+
+/*texto*/
+
+.txt-title-login {
+    color: rgb(109 104 104);
+    font-size: 40px;
+}
+
+.txt-medio::after,
+.txt-medio::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 10px;
+    width: 8rem;
+    height: 2px;
+    background: rgb(181 169 169);
+}
+
+.txt-medio::after {
+    right: 0;
+}
+
+.txt-medio::before {
+    left: 0;
+}
+
+@media screen and (max-width:870px) {
+    .content-login {
+        width: 100%;
+        display: flex;
+    }
+    .login-image {
+        width: 100%;
+        height: 40em;
+    }
+    .cnt-login {
+        z-index: 100;
+        width: 100%;
+    }
+    .cnt-row-login {
+        width: 60%;
+    }
+    .txt-medio::after {
+        right: 0;
+    }
+    .txt-medio::before {
+        left: 0;
+    }
+}

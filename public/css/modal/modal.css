@@ -1,0 +1,275 @@
+.modal {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1000;
+    background: rgba(73, 72, 72, 0.548);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-agregar {
+    width: 90%;
+    border-radius: 20px;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ctn-buscar-menu {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1em 0;
+    height: 20em;
+    overflow-y: scroll;
+}
+
+.ctn-radio-habilitar {
+    width: 80%;
+    padding: 0 40px;
+}
+
+.modal-agregar .modal-agregar-header {
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid rgb(218, 218, 222);
+}
+
+.modal-agregar .modal-agregar-header .modal-agregar-header-title {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: rgb(121, 123, 119);
+}
+
+.modal-agregar .modal-agregar-header .btn-exit-modal-agregar {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    background: transparent;
+}
+
+.modal-agregar .modal-agregar-header .btn-exit-modal-agregar:hover {
+    color: rgb(166, 172, 165);
+}
+
+.modal-agregar .modal-agregar-body {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 10px 0;
+    padding: 20px 0;
+    justify-content: center;
+    align-items: center;
+    min-height: 50px;
+}
+
+.modal-agregar .modal-agregar-body .input-agregar-modal {
+    width: 80%;
+    border: 1px solid rgb(246, 247, 249);
+    background: rgb(246, 247, 249);
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.modal-agregar .btn-agregar-modal {
+    padding: 10px 50px;
+    background: rgb(223, 73, 73);
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.modal-agregar .btn-agregar-modal:hover {
+    background: rgb(184, 75, 75);
+}
+
+.modal-buscar {
+    overflow: hidden;
+    width: 50%;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-cerrar-bus {
+    background: transparent;
+    display: flex;
+    padding: 20px 50px;
+}
+
+.btn-cerrar-bus:hover {
+    background: rgb(218, 218, 222);
+    color: rgb(104, 104, 104);
+}
+
+.modal-buscar .row-modal-search {
+    border-radius: 5px;
+    position: relative;
+    width: 80%;
+    height: 40px;
+    background: rgb(255, 255, 255);
+    margin: 20px 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid rgb(211, 213, 212);
+}
+
+.modal-buscar .row-modal-search .icon-search {
+    width: 50px;
+    text-align: center;
+}
+
+.modal-buscar .row-modal-buscar {
+    width: 80%;
+    margin: 10px 0;
+}
+
+.modal-buscar .row-modal-buscar .item-modal-buscar {
+    width: 100%;
+}
+
+.modal-buscar .row-modal-buscar .item-modal-buscar .btn-item-modal {
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background: rgb(240, 240, 240);
+    color: rgb(114, 97, 211);
+    border: 1px solid rgb(238, 247, 244);
+}
+
+.modal-buscar .row-modal-buscar .item-modal-buscar .btn-item-modal:hover {
+    background: rgb(95, 83, 165);
+    color: rgb(255, 255, 255);
+}
+
+.modal-buscar .row-modal-buscar .item-modal-buscar .btn-item-modal .icon-earth {
+    margin: 0 10px;
+}
+
+.modal-buscar .modal-search-option {
+    -webkit-user-select: none;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    background-color: rgb(245, 246, 250);
+    box-shadow: 5px 0px 5px rgb(211, 213, 212);
+}
+
+.modal-filter {
+    width: 50%;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    overflow: hidden;
+    display: block;
+}
+
+.modal-filter .modal-filter-body,
+.modal-filter .modal-filter-footer,
+.modal-filter .modal-filter-header {
+    width: 100%;
+    display: flex;
+}
+
+.modal-filter .modal-filter-header {
+    height: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.modal-filter .modal-filter-header .btn-modal-filter {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    font-size: 20px;
+    height: 50px;
+}
+
+.modal-filter .modal-filter-header .btn-modal-filter:hover {
+    color: rgb(201, 214, 200);
+}
+
+.modal-filter .modal-filter-body .row-filter-body {
+    width: 50%;
+    margin: 30px 0;
+}
+
+.modal-filter .modal-filter-body .row-filter-body .row-filter-body-item {
+    width: 100%;
+    position: relative;
+    padding: 10px 20px;
+}
+
+.modal-filter .modal-filter-body .row-filter-body .row-filter-body-item .filter-body-chk {
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    opacity: 0;
+}
+
+.modal-filter .modal-filter-body .row-filter-body .row-filter-body-item .icon-checkbox-filter {
+    color: rgb(67, 149, 219);
+    margin: 0 10px;
+}
+
+.modal-filter .modal-filter-body .row-filter-body .row-filter-body-item .input-filter-body {
+    width: 80%;
+    padding: 0 10px;
+    display: flex;
+    background: rgb(218, 218, 222);
+    height: 40px;
+    border-radius: 5px;
+}
+
+.modal-filter .modal-filter-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50px;
+    background: rgb(225, 222, 245);
+}
+
+.modal-filter .modal-filter-footer .btn-filter-cancelar,
+.modal-filter .modal-filter-footer .btn-filter-guardar {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+}
+
+.modal-filter .modal-filter-footer .btn-filter-guardar {
+    background: rgb(67, 149, 219);
+}
+
+.modal-filter .modal-filter-footer .btn-filter-guardar:hover {
+    background: rgb(114, 97, 211);
+}
+
+.modal-filter .modal-filter-footer .btn-filter-cancelar {
+    background: rgb(199, 75, 75);
+}
+
+.modal-filter .modal-filter-footer .btn-filter-cancelar:hover {
+    background: rgb(175, 80, 80);
+}
+
+@media screen and (max-width:786px) {
+    .modal-buscar {
+        width: 80%;
+    }
+}

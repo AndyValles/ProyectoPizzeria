@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,200&display=swap');
+.ctn-pedido {
+    width: 90%;
+    min-height: 35em;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 50px;
+    background: rgb(245, 247, 251);
+}
+
+.ctn-search-pedido {
+    display: flex;
+}
+
+.ctn-info-pedido {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.txt-col-pedido {
+    color: rgb(83, 49, 206);
+}
+
+.ctn-filter-search {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 3em;
+}
+
+.ctn-pedido-table {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin: 10px 0;
+    width: 100%;
+}
+
+
+/*table*/
+
+.table-pedido {
+    width: 90%;
+    height: 5em;
+    display: flex;
+    gap: 20px;
+    background: rgb(255, 255, 255);
+    border-radius: 10px;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid rgb(255, 255, 255);
+}
+
+.table-pedido:hover {
+    border: 2px solid rgb(131, 113, 240);
+}
+
+.row-table-pedido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-pedido-table {
+    width: 3em;
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background: rgb(245, 242, 253);
+    color: rgb(131, 113, 240);
+}
+
+.icon-pedido-table i {
+    font-size: 2em;
+}
+
+.ctn-table-pedido {
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(234, 234, 234);
+}
+
+.row-table-pedido-small {
+    background: rgb(250, 250, 250);
+    min-width: 8%;
+    display: flex;
+    overflow: hidden;
+    padding: 10px 30px;
+    border: 1px solid rgb(234, 234, 234);
+}
+
+.item-row-table-small {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.row-table-pedido-big {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
+
+.content-table-big {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 30%;
+    font-size: 8em;
+    color: rgb(202, 202, 202);
+}
+
+.table-conten-product {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.txt-pedido-title-ss {
+    font-size: 0.9em;
+    color: rgb(145, 153, 172);
+}
+
+.txt-pedido-title-ii {
+    font-size: 1.2em;
+    color: rgb(109, 109, 109);
+}
+
+.txt-descrip-product {
+    font-size: 0.9em;
+    color: rgb(146, 146, 146);
+}
+
+.txt-title-product {
+    font-size: 1.5em;
+}
+
+.btn-pedido-vermas {
+    width: 8em;
+    height: 3em;
+    border-radius: 5px;
+    color: rgb(255, 255, 255);
+    background: rgb(201, 60, 60);
+}
+
+.btn-pedido-vermas:hover {
+    background: rgb(180, 43, 43);
+}
+
+.btn-pedido-vermas:active {
+    background: rgb(156, 49, 49);
+}
+
+
+/*icon*/
+
+.ctn-icon-pedido {
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+    background: rgb(255, 255, 255);
+}
+
+
+/*input*/
+
+.input-search-pedido {
+    width: 100%;
+    height: 2em;
+    display: flex;
+    border-radius: 5px;
+    overflow: hidden;
+    border: 1.5px solid rgb(236, 236, 236);
+}
+
+.input-search-pedido:nth-child("input") {
+    border: 1.5px solid rgb(83, 49, 206);
+}
+
+.input-pedido {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*button*/
+
+.btn-ver {
+    border-radius: 10px;
+    padding: 20px;
+    color: rgb(245, 242, 253);
+    background: rgb(131, 113, 240);
+}
+
+.btn-ver:hover {
+    background: rgb(159, 148, 226);
+}
+
+.btn-ver:active {
+    background: rgb(129, 120, 189);
+}
+
+
+/*texto*/
+
+.txt-pedido-title {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: 2em;
+    font-size: 3em;
+}
+
+.txt-title-pedido {
+    font-size: 1.5em;
+}
+
+.subtxt-title-pedido {
+    font-size: 0.8em;
+    color: rgb(145, 153, 172);
+}
+
+.txt-total-pedido {
+    font-size: 0.8em;
+    color: rgb(95, 105, 134);
+}
+
+.txt-fecha-pedido {
+    font-size: 1.4em;
+    color: rgb(95, 105, 134);
+}
+
+@media screen and (max-width:786px) {
+    .txt-pedido-title-ss {
+        font-size: 0.7em;
+    }
+    .txt-pedido-title-ii {
+        font-size: 0.9em;
+    }
+    .content-table-big {
+        font-size: 5em;
+        width: 50%;
+    }
+    .item-row-table-small {
+        width: 60%;
+    }
+}
